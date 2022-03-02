@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+    <title>Form</title>
+    <script src="./js/form.js" defer></script>
+  </head>
+  <body>
+    <h1>Our form</h1>
+
+    <form id="userForm" autocomplete="off">
+      <input type="text" name="username" id="username" placeholder="Username" value="Mike" />
+      <span class="error"></span>
+      <input type="email" name="email" id="email" placeholder="Email" value="Mike@Tyson.com" />
+      <h3>Is kur jus?</h3>
+      <select name="town" id="town">
+        <option value="">please select</option>
+        <option value="kaunas">Kaunas</option>
+        <option value="vilnius">Vilnius</option>
+        <option value="klaipeda">Klaipeda</option>
+      </select>
+
+      <button type="submit">Siusti</button>
+    </form>
+    <div id="results">
+      <h3>Results</h3>
+      <p>Usernname: <strong id="out1"></strong> </p>
+      <p>Email: <strong id="out2"></strong> </p>
+      <p>Town: <strong id="out3"></strong> </p>
+    </div>
+  </body>
+</html>
