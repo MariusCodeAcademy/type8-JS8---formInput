@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
     <title>Form</title>
+    <style>
+      .error {
+        color: tomato;
+      }
+    </style>
     <script src="./js/form.js" defer></script>
   </head>
   <body>
@@ -22,6 +27,10 @@
         <option value="vilnius">Vilnius</option>
         <option value="klaipeda">Klaipeda</option>
       </select>
+
+      <label for="points">Patinka Programavimas (between 0 and 10):</label>
+      <strong class="value"></strong>
+      <input type="range" id="points" value="6" name="points" step="1" min="0" max="10" />
 
       <button type="submit">Siusti</button>
     </form>
